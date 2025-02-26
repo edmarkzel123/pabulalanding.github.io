@@ -6,36 +6,56 @@
     <title>Landing Page</title>
     <style>
         body {
-            font-size: 20px; /* Increase text size */
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .title {
-            font-size: 24px; /* Bigger title */
+            font-size: 30px;
             font-weight: bold;
         }
-        .portfolio {
-            font-size: 22px; /* Bigger portfolio link */
-            display: block; /* Ensures it takes full width */
-            text-decoration: none; /* Remove underline */
-            color: blue; /* Keep link color */
+        .grid-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
         }
-        .sub-links {
-            display: block; /* Places them under "portfolio" */
-            margin-left: 20px; /* Indentation */
+        .grid-links a {
+            text-decoration: none;
+            color: white;
+            background: blue;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .grid-links a:hover {
+            background: darkblue;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Edmarkzel Pabula Landing Page</h1>
-        <p>web system</p>
-        <a href="https://edmarkzel123.github.io/">portfolio</a>
-        <a href="https://edmarkzel123.github.io/CV.github.io/">pit1</a>
-        <a href="https://edmarkzel123.github.io/webrepo1.github.io/">PIT2</a>
-    </div>
-    <div>
-        <h2></h2>
-        <p></p>
+    <div class="container">
+        <h1 class="title">Edmarkzel Pabula Landing Page</h1>
+        <p>Web System</p>
+        <div class="grid-links">
+            <a href="https://edmarkzel123.github.io/">PIT1</a>
+            <a href="https://edmarkzel123.github.io/CV.github.io/">PIT2</a>
+            <a href="https://edmarkzel123.github.io/webrepo1.github.io/">PIT3</a>
+            <a href="https://edmarkzel123.github.io/">PIT 4</a>
+        </div>
     </div>
 </body>
 </html>
-
